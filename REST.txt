@@ -1,0 +1,13 @@
+RESTFUL ROUTES
+
+NAME		URL				VERB			DESC.												MONGOOSE METHOD
+----------------------------------------------------------------------------------------------------------------------------------
+INDEX		/dogs			GET				Display a list of all dogs							Dog.find()
+NEW			/dogs/new		GET				Displays form to make a dog							N/A
+CREATE		/dogs			POST			Add new dog to dogs page							Dog.create()
+SHOW		/dogs/:id		GET				shows info about one dog							Dog.findById()
+EDIT		/dogs/:id/edit	GET				Show edit form for one dog.							Dog.findById()
+UPDATE		/dogs/:id		PUT				Update a particular dog, and redirect some where	Dog.findByIdAndUpdate()
+DESTROY		/dogs/:id		DELETE			Delete a particular dog, then redirect some where	Dog.findByIdAndRemove()
+
+
